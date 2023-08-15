@@ -300,6 +300,7 @@ a:hover {
     border-radius: 5px;
     border-color: #e55561;
     background-color: #1f2329;
+    color: #e55561;
 }
 
 .tech-dev-bookmarks {
@@ -314,6 +315,7 @@ a:hover {
     border-radius: 5px;
     border-color: #e2b86b;
     background-color: #1f2329;
+    color: #e2b86b;
 }
 
 .gaming-bookmarks {
@@ -328,6 +330,7 @@ a:hover {
     border-radius: 5px;
     border-color: #8ebd6b;
     background-color: #1f2329;
+    color: #8ebd6b;
 }
 
 .finance-bookmarks {
@@ -342,4 +345,5 @@ a:hover {
     border-radius: 5px;
     border-color: #4fa6ed;
     background-color: #1f2329;
+    color: #4fa6ed;
 }
