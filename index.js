@@ -84,6 +84,7 @@ getWeather();
 function translateCode(code) {
     let weatherDesc;
     let weatherImage;
+    let folder = "weather_icons_frappe/"
     let date = new Date();
     time = date.getHours();
     switch(code) {
@@ -91,148 +92,148 @@ function translateCode(code) {
             weatherDesc = "Clear Sky";
             console.log(time);
             if (time > 7 && time < 20) {
-                weatherImage = "weather_icons/clear_day.png";
+                weatherImage = folder + "clear_day.png";
             }
             else {
-                weatherImage = "weather_icons/clear_night.png";
+                weatherImage = folder + "clear_night.png";
             }
             break;
         case 1:
             weatherDesc = "Mostly Clear";
             if (time > 7 && time < 20) {
-                weatherImage = "weather_icons/partly_cloudy.png";
+                weatherImage = folder + "partly_cloudy.png";
             }
             else {
-                weatherImage = "weather_icons/clear_night.png";
+                weatherImage = folder + "clear_night.png";
             }
             break;
         case 2:
             weatherDesc = "Partly Cloudy";
             if (time > 7 && time < 20) {
-                weatherImage = "weather_icons/partly_cloudy.png";
+                weatherImage = folder + "partly_cloudy.png";
             }
             else {
-                weatherImage = "weather_icons/cloudy_night.png";
+                weatherImage = folder + "cloudy_night.png";
             }
             break;
         case 3:
             weatherDesc = "Overcast";
             if (time > 7 && time < 20) {
-                weatherImage = "weather_icons/overcast.png";
+                weatherImage = folder + "overcast.png";
             }
             else {
-                weatherImage = "weather_icons/cloudy_night.png";
+                weatherImage = folder + "cloudy_night.png";
             }
             break;
         case 45:
             weatherDesc = "Foggy";
             if (time > 7 && time < 20) {
-                weatherImage = "weather_icons/foggy_day.png";
+                weatherImage = folder + "foggy_day.png";
             }
             else {
-                weatherImage = "weather_icons/foggy_night.png";
+                weatherImage = folder + "foggy_night.png";
             }
             break;
         case 48:
             weatherDesc = "Rime Fog";
             if (time > 7 && time < 20) {
-                weatherImage = "weather_icons/foggy_day.png";
+                weatherImage = folder + "foggy_day.png";
             }
             else {
-                weatherImage = "weather_icons/foggy_night.png";
+                weatherImage = folder + "foggy_night.png";
             }
             break;
         case 51:
             weatherDesc = "Light Drizzle";
-            weatherImage = "weather_icons/drizzle.png";
+            weatherImage = folder + "drizzle.png";
             break;
         case 53:
             weatherDesc = "Moderate Drizzle";
-            weatherImage = "weather_icons/drizzle.png";
+            weatherImage = folder + "drizzle.png";
             break;
         case 55:
             weatherDesc = "Dense Drizzle";
-            weatherImage = "weather_icons/drizzle.png";
+            weatherImage = folder + "drizzle.png";
             break;
         case 56:
             weatherDesc = "Light Freezing Drizzle";
-            weatherImage = "weather_icons/drizzle.png";
+            weatherImage = folder + "drizzle.png";
             break;
         case 57:
             weatherDesc = "Dense Freezing Drizzle";
-            weatherImage = "weather_icons/drizzle.png";
+            weatherImage = folder + "drizzle.png";
             break;
         case 61:
             weatherDesc = "Slight Rain";
-            weatherImage = "weather_icons/moderate_rain.png";
+            weatherImage = folder + "moderate_rain.png";
             break;
         case 63:
             weatherDesc = "Moderate Rain";
-            weatherImage = "weather_icons/moderate_rain.png";
+            weatherImage = folder + "moderate_rain.png";
             break;
         case 65:
             weatherDesc = "Heavy Rain";
-            weatherImage = "weather_icons/moderate_rain.png";
+            weatherImage = folder + "moderate_rain.png";
             break;
         case 66:
             weatherDesc = "Light Feezing Rain";
-            weatherImage = "weather_icons/moderate_rain.png";
+            weatherImage = folder + "moderate_rain.png";
             break;
         case 67:
             weatherDesc = "Heavy Freezing Rain";
-            weatherImage = "weather_icons/moderate_rain.png";
+            weatherImage = folder + "moderate_rain.png";
             break;
         case 71:
             weatherDesc = "Slight Snowfall";
-            weatherImage = "weather_icons/snow.png";
+            weatherImage = folder + "snow.png";
             break;
         case 73:
             weatherDesc = "Moderate Snowfall";
-            weatherImage = "weather_icons/snow.png";
+            weatherImage = folder + "snow.png";
             break;
         case 75:
             weatherDesc = "Heavy Snowfall";
-            weatherImage = "weather_icons/snow.png";
+            weatherImage = folder + "snow.png";
             break;
         case 77:
             weatherDesc = "Snow Gains";
-            weatherImage = "weather_icons/snow.png";
+            weatherImage = folder + "snow.png";
             break;
         case 80:
             weatherDesc = "Slight Rain Showers";
-            weatherImage = "weather_icons/heavy_rain.png";
+            weatherImage = folder + "heavy_rain.png";
             break;
         case 81:
             weatherDesc = "Moderate Rain Showers";
-            weatherImage = "weather_icons/heavy_rain.png";
+            weatherImage = folder + "heavy_rain.png";
             break;
         case 82:
             weatherDesc = "Violent Rain Showers";
-            weatherImage = "weather_icons/heavy_rain.png";
+            weatherImage = folder + "heavy_rain.png";
             break;
         case 85:
             weatherDesc = "Slight Snow Showers";
-            weatherImage = "weather_icons/snow.png";
+            weatherImage = folder + "snow.png";
             break;
         case 86:
             weatherDesc = "Heavy Snow Showers";
-            weatherImage = "weather_icons/snow.png";
+            weatherImage = folder + "snow.png";
             break;
         case 95:
             weatherDesc = "Slight Thunderstorms";
-            weatherImage = "weather_icons/thunderstorm.png";
+            weatherImage = folder + "thunderstorm.png";
             break;
         case 96:
             weatherDesc = "Moderate Thunderstorms";
-            weatherImage = "weather_icons/thunderstorm.png";
+            weatherImage = folder + "thunderstorm.png";
             break;
         case 99:
             weatherDesc = "Hail Thunderstroms";
-            weatherImage = "weather_icons/thunderstorm.png";
+            weatherImage = folder + "thunderstorm.png";
             break;
         default:
             weatherDesc = "";
-            weatherImage = "weather_icons/clear_day.png";
+            weatherImage = folder + "clear_day.png";
     }
     return [weatherDesc, weatherImage];
 }
