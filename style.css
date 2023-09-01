@@ -227,7 +227,7 @@ body {
     background-color: var(--bg);
 
     border: solid;
-    border-color: var(--bg);
+    border-color: var(--fg);
     border-width: 3px;
     border-radius: 5px;
 }
@@ -239,7 +239,7 @@ body {
 }
 
 .searchbox:focus {
-    outline: 5px solid var(--color1);
+    outline: 5px solid var(--color2);
 }
 
 /* ######################################################################### */
